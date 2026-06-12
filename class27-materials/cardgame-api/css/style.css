@@ -1,0 +1,31 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.container{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#p2Wins, #p1Wins{
+  padding-top: 10px;
+  text-align: center;
+}

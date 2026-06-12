@@ -1,0 +1,76 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+}
+li{
+  list-style-type: none;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+/* Layout wrappers */
+.carousel-wrapper {
+    position: relative;
+    max-width: 340px; /* Width of one card + padding room */
+    margin: 40px auto;
+    overflow: hidden; /* Crucial: Hides all cards except the active one */
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.4s ease-in-out; /* Makes the sliding smooth */
+    width: max-content;
+}
+
+/* Individual drink card layout */
+.drink-card {
+    width: 300px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.drink-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Navigation Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev-btn { left: 5px; }
+.next-btn { right: 5px; }
+.carousel-btn:hover { background: rgba(0, 0, 0, 0.8); }
+.no-results { padding: 20px; color: #666; }
